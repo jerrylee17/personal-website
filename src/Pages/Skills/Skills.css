@@ -1,0 +1,34 @@
+/* body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+} */
+
+.wrapper {
+    position: relative;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1px;
+    height: 100vh;
+}
+
+.clickbox {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    height: 100%;
+    width: 3000%;
+}
+
+.el {
+    position: absolute;
+    opacity: 1;
+    width: 2px;
+    height: 24vh;
+    margin-top: -12vh;
+    transform-origin: 50% 100%;
+    background: white;
+}

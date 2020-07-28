@@ -1,0 +1,138 @@
+{
+    "Languages": [
+        {
+            "Name": "Python",
+            "Projects": [
+                "Drawing Numbers"
+            ]
+        },
+        {
+            "Name": "C++",
+            "Projects": [
+                
+            ]
+        },
+        {
+            "Name": "Javascript",
+            "Projects": [
+                
+            ]
+        },
+        {
+            "Name": "C",
+            "Projects": [
+                
+            ]
+        },
+        {
+            "Name": "MySQL",
+            "Projects": [
+                
+            ]
+        },
+        {
+            "Name": "Verilog",
+            "Projects": [
+                
+            ]
+        },
+        {
+            "Name": "Java",
+            "Projects": [
+                
+            ]
+        },
+        {
+            "Name": "C#",
+            "Projects": [
+                
+            ]
+        },
+        {
+            "Name": "Powershell",
+            "Projects": [
+                
+            ]
+        }
+    ],
+    "Tools": [
+        {
+            "Name": "Git",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Numpy",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Pytest",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "RPC",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Flask",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "MERN Stack",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Desmod/Simpy",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Google API",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Discord API",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "LPD protocol",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Travis-CI",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Heroku",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "AWS",
+            "Projects": [
+
+            ]
+        }
+    ]
+}
