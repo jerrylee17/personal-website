@@ -16,9 +16,6 @@ export default function SkillSpinner(props) {
     duration: delay,
     complete: () => { tl.restart(); }
   });
-  function createSpinner() {
-    for (let i = 0; i < numberOfEls; i++) createEl(i);
-  }
 
   function animateobject(animation) {
     anime.remove(animation.targets);
@@ -27,6 +24,7 @@ export default function SkillSpinner(props) {
 
   function createEl(i) {
     let el = document.createElement('div');
+    let clickbox = document.createElement('div');
     const rotate = (360 / numberOfEls) * i;
     const translateY = -50;
     const hue = Math.round(360 / numberOfEls * i);
@@ -36,9 +34,9 @@ export default function SkillSpinner(props) {
     let innertext = document.createElement('innerText');
     innertext.innerHTML += spinnerText[i];
     innertext.style.position = 'absolute';
-    let textrotate = -90;
+    let textrotate = -1 * rotate;
     innertext.style.transform = 'rotate(' + textrotate + 'deg)';
-    el.appendChild(innertext);
+    clickbox.appendChild(innertext);
     let movinganimation = {
       targets: el,
       backgroundColor: ['hsl(' + hue + ', 40%, 60%)', 'hsl(' + hue + ', 60%, 90%)'],
@@ -54,7 +52,7 @@ export default function SkillSpinner(props) {
         anime(movinganimation);
       }
     });
-    let clickbox = document.createElement('div');
+    
     clickbox.classList.add('clickbox');
     clickbox.addEventListener('mouseover', () => {
       let animation = {
@@ -68,14 +66,23 @@ export default function SkillSpinner(props) {
       let animation = {
         targets: el,
         scale: 1.0,
-        duration: 600
+        duration: 600,
+        translateY: translateY,
+        rotate: rotate
       }
       animateobject(animation)
+    })
+    clickbox.addEventListener('click', () => {
+      // console.log('hielskdjflksj')
     })
     const wrapperEl = document.querySelector('.wrapper');
     el.appendChild(clickbox);
     wrapperEl.appendChild(el);
   };
+
+  function createSpinner() {
+    for (let i = 0; i < numberOfEls; i++) createEl(i);
+  }
 
   useEffect(() => {
     createSpinner();
