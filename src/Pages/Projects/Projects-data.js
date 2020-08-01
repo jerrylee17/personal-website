@@ -1,4 +1,4 @@
-export const Projects = {
+export const ProjectsData = {
   "Projects": [
     {
       "Name": "Drawing Numbers",
@@ -6,12 +6,13 @@ export const Projects = {
       "Link": "https://drawing-numbers.herokuapp.com/",
       "Description": `A simple Neural Network to detect digits! This
         was my first attempt at a neural network!`,
-      "Tools used": [
+      "Tools": [
         "Numpy",
         "Python",
         "Flask",
         "bootstrap",
-        "Sphinx Documentation"
+        "Sphinx Documentation",
+        "Heroku"
       ]
     },
     {
@@ -19,9 +20,11 @@ export const Projects = {
       "Repository": "https://github.com/SCE-Development/Core-v4",
       "Link": "http://sce.engr.sjsu.edu/",
       "Description": `This is the Society of Software and Computer 
-        Engineering (SCE)'s outward face on the internet. The club has 
-        over 300 members`,
-      "Tools used": [
+        Engineering (SCE)'s outward face on the internet. Core-v4 serves
+        as a place for SCE members to gather information about events 
+        and provide feedback. The club has over 300 members. Note: This
+        website is currently down due to COVID.`,
+      "Tools": [
         "MongoDB",
         "ExpressJS",
         "ReactJS",
@@ -37,8 +40,8 @@ export const Projects = {
       "Description": `This started out as the printing page
         for the SCE, but became part of the new SCE-RPC repository
         where we connect the club website to numerous gadgets in
-        the room.`,
-      "Tools used": [
+        the room. Note: This website is currently down due to COVID.`,
+      "Tools": [
         "MongoDB",
         "ExpressJS",
         "ReactJS",
@@ -54,13 +57,15 @@ export const Projects = {
     {
       "Name": "Data Structures and Algorithms series",
       "Repository": "https://github.com/jerrylee17/workshop-series",
-      "Link": "",
+      "Link": "https://github.com/jerrylee17/workshop-series",
       "Description": `A compilation of Jupyter Notebook files with
         python tutorials for data structures and algorithms. This project
         was aimed at helping members of the SCE get a jump start with
         interviews.`,
-      "Tools used": [
-
+      "Tools": [
+        "Python",
+        "Jupyter Notebook",
+        "Algorithms"
       ]
     },
     {
@@ -69,7 +74,7 @@ export const Projects = {
       "Link": "",
       "Description": `A casino made for gambling during times of 
         COVID! This casino is made purely for entertainment. `,
-      "Tools used": [
+      "Tools": [
         "git",
         "ReactJS",
         "NodeJS",
@@ -78,18 +83,20 @@ export const Projects = {
       ]
     },
     {
-      "Name": "Masterkitchen",
+      "Name": "MasterKitchen",
       "Repository": "https://github.com/jerrylee17/MasterKitchen",
       "Link": "https://masterkitchen.herokuapp.com/main",
       "Description": `A utility that allows restaurants to keep
         track of their inventory! Masterkitchen comes with a variety
         of tools and features that is carefully documented on the README.`,
-      "Tools used": [
+      "Tools": [
         "Python",
         "Flask",
         "bootstrap",
-        "Sphinx",
-        "pytest"
+        "Sphinx Documentation",
+        "Travis-CI",
+        "pytest",
+        "Heroku"
       ]
     },
     {
@@ -100,7 +107,7 @@ export const Projects = {
         organize events and communicate quickly, like birds. This project 
         connects Google forms with Google Calendar and Discord, allowing
         for better communication within clubs at SJSU`,
-      "Tools used": [
+      "Tools": [
         "DiscordJS",
         "Google Calendar API",
         "Google Scripts",

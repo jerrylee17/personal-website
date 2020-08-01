@@ -1,8 +1,6 @@
 import React from 'react';
 import './Skills.css'
 
-// import anime from 'animejs/lib/anime.es.js';
-
 export default function SkillDisplay(props) {
   const {
     skill
@@ -13,7 +11,7 @@ export default function SkillDisplay(props) {
         <>
           <br />
           <h3 className='text-center'>{skill.Name}</h3>
-          Type: {skill.Type} 
+          Type: {skill.Type}
           <br /> < br />
           {skill.Experience ?
             <>Experience: {skill.Experience}</>
@@ -21,17 +19,17 @@ export default function SkillDisplay(props) {
           }
           <br /> < br />
           {skill.Projects ?
-            skill.Projects.map(
-              (Project, index) => (
-              Project
-            ))
+            <> Projects: 
+              {skill.Projects.map(
+                (Project) => (
+                  Project
+                ))}
+            </>
             : ''
           }
         </>
         : ''
       }
-
-      {/* Hi I'm a display */}
     </>
   )
 }

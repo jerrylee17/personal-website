@@ -1,0 +1,22 @@
+.MuiButtonBase-root:disabled {
+    color: white !important;
+    opacity: 0.5;
+}
+
+.grid {
+    display: grid;
+    /* color: black; */
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    padding-bottom: 100px;
+}
+
+.MuiCardActions-root {
+    position: absolute;
+    bottom: 0;
+}
+
+.MuiCard-root {
+    height: 100%;
+    position: relative;
+}

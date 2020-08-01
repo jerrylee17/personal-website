@@ -5,7 +5,10 @@
             "Type": "Language",
             "Experience": "3+ years",
             "Projects": [
-                "Drawing Numbers"
+                "Drawing Numbers",
+                "Remote Paper Printing Infrastructure (SCE-RPC)",
+                "Data Structures and Algorithms series",
+                "MasterKitchen"
             ]
         },
         {
@@ -17,11 +20,42 @@
             ]
         },
         {
-            "Name": "Javascript",
+            "Name": "NodeJS",
             "Type": "Language",
             "Experience": "2 years",
             "Projects": [
-                
+                "Core-v4",
+                "Remote Paper Printing Infrastructure (SCE-RPC)",
+                "Blips",
+                "Birb"
+            ]
+        },
+        {
+            "Name": "ReactJS",
+            "Type": "Language",
+            "Experience": "2 years",
+            "Projects": [
+                "Core-v4",
+                "Remote Paper Printing Infrastructure (SCE-RPC)",
+                "Blips"
+            ]
+        },
+        {
+            "Name": "ExpressJS",
+            "Type": "Language",
+            "Experience": "2 years",
+            "Projects": [
+                "Core-v4",
+                "Remote Paper Printing Infrastructure (SCE-RPC)"
+            ]
+        },
+        {
+            "Name": "MongoDB",
+            "Type": "Language",
+            "Experience": "2 years",
+            "Projects": [
+                "Core-v4",
+                "Remote Paper Printing Infrastructure (SCE-RPC)"
             ]
         },
         {
@@ -37,7 +71,7 @@
             "Type": "Language",
             "Experience": "1 year",
             "Projects": [
-                
+                "Blips"
             ]
         },
         {
@@ -97,21 +131,14 @@
             "Name": "RPC",
             "Type": "Tool",
             "Projects": [
-
+                "Remote Paper Printing Infrastructure (SCE-RPC)"
             ]
         },
         {
             "Name": "Flask",
             "Type": "Tool",
             "Projects": [
-
-            ]
-        },
-        {
-            "Name": "MERN Stack",
-            "Type": "Tool",
-            "Projects": [
-
+                "MasterKitchen"
             ]
         },
         {
@@ -125,49 +152,52 @@
             "Name": "Google API",
             "Type": "Tool",
             "Projects": [
-
+                "Birb"
             ]
         },
         {
             "Name": "Discord API",
             "Type": "Tool",
             "Projects": [
-
+                "Birb"
             ]
         },
         {
             "Name": "LPD protocol",
             "Type": "Tool",
             "Projects": [
-
+                "Remote Paper Printing Infrastructure (SCE-RPC)"
             ]
         },
         {
             "Name": "Travis-CI",
             "Type": "Tool",
             "Projects": [
-
+                "Core-v4",
+                "Remote Paper Printing Infrastructure (SCE-RPC)",
+                "MasterKitchen"
             ]
         },
         {
             "Name": "Heroku",
             "Type": "Tool",
             "Projects": [
-
+                "MasterKitchen",
+                "Drawing Numbers"
             ]
         },
         {
             "Name": "AWS",
             "Type": "Tool",
             "Projects": [
-
+                
             ]
         },
         {
             "Name": "Jupyter Notebook",
             "Type": "Tool",
             "Projects": [
-
+                "Data Structures and Algorithms series"
             ]
         }
     ]
