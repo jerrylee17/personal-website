@@ -1,136 +1,171 @@
 {
-    "Languages": [
+    "skills": [
         {
             "Name": "Python",
-            "Experience": "",
+            "Type": "Language",
+            "Experience": "3+ years",
             "Projects": [
                 "Drawing Numbers"
             ]
         },
         {
             "Name": "C++",
+            "Type": "Language",
+            "Experience": "3+ years",
             "Projects": [
                 
             ]
         },
         {
             "Name": "Javascript",
+            "Type": "Language",
+            "Experience": "2 years",
             "Projects": [
                 
             ]
         },
         {
             "Name": "C",
+            "Type": "Language",
+            "Experience": "2 years",
             "Projects": [
                 
             ]
         },
         {
             "Name": "MySQL",
+            "Type": "Language",
+            "Experience": "1 year",
             "Projects": [
                 
             ]
         },
         {
             "Name": "Verilog",
+            "Type": "Language",
+            "Experience": "2 years",
             "Projects": [
                 
             ]
         },
         {
             "Name": "Java",
+            "Type": "Language",
+            "Experience": "1 year",
             "Projects": [
                 
             ]
         },
         {
             "Name": "C#",
+            "Type": "Language",
+            "Experience": "1 year",
             "Projects": [
                 
             ]
         },
         {
             "Name": "Powershell",
+            "Type": "Language",
+            "Experience": "1 year",
             "Projects": [
                 
             ]
-        }
-    ],
-    "Tools": [
+        },
         {
             "Name": "Git",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "Numpy",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "Pytest",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "RPC",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "Flask",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "MERN Stack",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "Desmod/Simpy",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "Google API",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "Discord API",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "LPD protocol",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "Travis-CI",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "Heroku",
+            "Type": "Tool",
             "Projects": [
 
             ]
         },
         {
             "Name": "AWS",
+            "Type": "Tool",
+            "Projects": [
+
+            ]
+        },
+        {
+            "Name": "Jupyter Notebook",
+            "Type": "Tool",
             "Projects": [
 
             ]

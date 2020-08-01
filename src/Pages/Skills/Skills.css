@@ -12,7 +12,8 @@
     margin-right: auto;
     position: absolute;
     height: 100%;
-    width: 3000%;
+    width: 2500%;
+    cursor: pointer;
 }
 
 .el {
@@ -20,17 +21,18 @@
     opacity: 1;
     width: 2px;
     height: 24vh;
-    margin-top: 50vh;
+    margin-top: 70vh;
     transform-origin: 50% 100%;
     background: white;
 }
 
-.left-component {
-    position: relative;
-    right: 20vw;
+.centered-component {
+    transition: 200ms ease-in-out;
 }
 
-.right-component {
+.left-component {
     position: relative;
-    left: 50vw;
+    transition: 200ms ease-in-out;
+    transform: translateX(-20vw);
 }
+
