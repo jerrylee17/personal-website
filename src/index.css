@@ -29,4 +29,5 @@ code {
   height: 100%;
   min-height: 99vh;
   color: white;
+  overflow: hidden;
 }
