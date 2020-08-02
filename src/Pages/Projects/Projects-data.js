@@ -1,11 +1,13 @@
 export const ProjectsData = {
   "Projects": [
     {
+      "Project-id": 1,
       "Name": "Drawing Numbers",
       "Repository": "https://github.com/hsorathia/drawing_numbers",
       "Link": "https://drawing-numbers.herokuapp.com/",
-      "Description": `A simple Neural Network to detect digits! This
-        was my first attempt at a neural network!`,
+      "Description": `A simple Neural Network to detect digits1 This
+        was my first attempt at a neural network1 Click on Demo to see
+        how well I trained it!`,
       "Tools": [
         "Numpy",
         "Python",
@@ -16,6 +18,7 @@ export const ProjectsData = {
       ]
     },
     {
+      "Project-id": 2,
       "Name": "Core-v4",
       "Repository": "https://github.com/SCE-Development/Core-v4",
       "Link": "http://sce.engr.sjsu.edu/",
@@ -34,13 +37,15 @@ export const ProjectsData = {
       ]
     },
     {
+      "Project-id": 3,
       "Name": "Remote Paper Printing Infrastructure (SCE-RPC)",
       "Repository": "https://github.com/jerrylee17/printingRPC",
       "Link": "http://sce.engr.sjsu.edu/",
-      "Description": `This started out as the printing page
-        for the SCE, but became part of the new SCE-RPC repository
-        where we connect the club website to numerous gadgets in
-        the room. Note: This website is currently down due to COVID.`,
+      "Description": `A page on Core-v4 that allows users to print.
+        This started out as the printing page for the SCE, but became
+        part of the new SCE-RPC repository where we connect the club 
+        website to numerous gadgets in the room. Note: This website
+        is currently down due to COVID.`,
       "Tools": [
         "MongoDB",
         "ExpressJS",
@@ -49,12 +54,13 @@ export const ProjectsData = {
         "Travis-ci",
         "git",
         "LPD printing",
-        "Remote Procedure Call (RPC)",
+        "RPC",
         "Protobuf",
         "Python"
       ]
     },
     {
+      "Project-id": 4,
       "Name": "Data Structures and Algorithms series",
       "Repository": "https://github.com/jerrylee17/workshop-series",
       "Link": "https://github.com/jerrylee17/workshop-series",
@@ -69,6 +75,7 @@ export const ProjectsData = {
       ]
     },
     {
+      "Project-id": 5,
       "Name": "Blips",
       "Repository": "https://github.com/jerrylee17/casino",
       "Link": "",
@@ -83,11 +90,12 @@ export const ProjectsData = {
       ]
     },
     {
+      "Project-id": 6,
       "Name": "MasterKitchen",
       "Repository": "https://github.com/jerrylee17/MasterKitchen",
       "Link": "https://masterkitchen.herokuapp.com/main",
       "Description": `A utility that allows restaurants to keep
-        track of their inventory! Masterkitchen comes with a variety
+        track of their inventory. Masterkitchen comes with a variety
         of tools and features that is carefully documented on the README.`,
       "Tools": [
         "Python",
@@ -100,13 +108,15 @@ export const ProjectsData = {
       ]
     },
     {
+      "Project-id": 7,
       "Name": "Birb",
       "Repository": "https://github.com/jerrylee17/googhaxDisc",
       "Link": "",
-      "Description": `We want the users of this application to be able to
-        organize events and communicate quickly, like birds. This project 
+      "Description": `An application that enables its users to
+        organize events and communicate quickly. This project 
         connects Google forms with Google Calendar and Discord, allowing
-        for better communication within clubs at SJSU`,
+        for better communication within clubs at SJSU. For a demo, see
+        the README of the github repository`,
       "Tools": [
         "DiscordJS",
         "Google Calendar API",

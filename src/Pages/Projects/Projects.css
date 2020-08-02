@@ -6,7 +6,7 @@
 .grid {
     display: grid;
     /* color: black; */
-    gap: 1rem;
+    gap: 3rem 1rem;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     padding-bottom: 100px;
 }
@@ -20,3 +20,23 @@
     height: 100%;
     position: relative;
 }
+
+.MuiCard-root.hidden {
+    opacity: 0;
+    transition: 300ms ease-in-out;
+}
+
+.MuiCard-root.active {
+    opacity: 1;
+    transition: 400ms ease-in-out;
+    pointer-events: all;
+}
+
+.MuiButton-contained {
+    cursor: default;
+    pointer-events: none;
+    color: white !important;
+    background-color: black !important;
+}
+
+
