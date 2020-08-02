@@ -23,7 +23,7 @@ function importComponents(routes){
   return newRoutes
 }
 
-export default function Routing() {
+export default function Routing({ appProps }) {
   let routes = importComponents(allRoutes.Routes);
   return (
     <Router>
@@ -35,9 +35,11 @@ export default function Routing() {
                 key={index}
                 exact
                 path={path}
-                render={() => (
+                render={(props) => (
                   <NavBarWrapper 
-                    component={Component} 
+                    component={Component}
+                    {...props}
+                    {...appProps}
                   />
                 )}
               />

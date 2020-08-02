@@ -59,9 +59,9 @@
             ]
         },
         {
-            "Name": "C",
+            "Name": "Powershell",
             "Type": "Language",
-            "Experience": "2 years",
+            "Experience": "1 year",
             "Projects": [
                 
             ]
@@ -91,15 +91,15 @@
             ]
         },
         {
-            "Name": "C#",
+            "Name": "C",
             "Type": "Language",
-            "Experience": "1 year",
+            "Experience": "2 years",
             "Projects": [
                 
             ]
         },
         {
-            "Name": "Powershell",
+            "Name": "C#",
             "Type": "Language",
             "Experience": "1 year",
             "Projects": [
@@ -187,17 +187,17 @@
             ]
         },
         {
-            "Name": "AWS",
-            "Type": "Tool",
-            "Projects": [
-                
-            ]
-        },
-        {
             "Name": "Jupyter Notebook",
             "Type": "Tool",
             "Projects": [
                 "Data Structures and Algorithms series"
+            ]
+        },
+        {
+            "Name": "AWS",
+            "Type": "Tool",
+            "Projects": [
+                
             ]
         }
     ]

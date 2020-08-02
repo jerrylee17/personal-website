@@ -20,7 +20,7 @@
     position: absolute;
     opacity: 1;
     width: 2px;
-    height: 24vh;
+    height: 26vh;
     margin-top: 70vh;
     transform-origin: 50% 100%;
     background: white;
@@ -36,3 +36,6 @@
     transform: translateX(-20vw);
 }
 
+.MuiCardContent-root:last-child {
+    padding-bottom: 0px !important;
+}

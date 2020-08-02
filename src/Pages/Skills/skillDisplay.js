@@ -1,10 +1,35 @@
 import React from 'react';
 import './Skills.css'
+import { makeStyles } from '@material-ui/core/styles'
+import { Card, CardContent } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
+
+const useStyles = makeStyles((theme) => ({
+  card: {
+    backgroundColor: 'black',
+    color: 'white',
+    fontSize: '1rem',
+    height: '100px',
+    marginBottom: '30px',
+    overflow: 'scroll',
+    paddingBottom: '0px',
+    cursor: 'pointer'
+  },
+  cardContent: {
+    padding: '5px 10px'
+  }
+}))
 
 export default function SkillDisplay(props) {
   const {
     skill
   } = props;
+  const classes = useStyles()
+  const history = useHistory()
+  const routeChange = (path) => {
+    history.push(path)
+  }
+
   return (
     <>
       {skill ?
@@ -19,10 +44,23 @@ export default function SkillDisplay(props) {
           }
           <br /> < br />
           {skill.Projects ?
-            <> Projects: 
+            <>
               {skill.Projects.map(
-                (Project) => (
-                  Project
+                (Project, index) => (
+                  <>
+                    <Card
+                      className={classes.card}
+                      key={index}
+                      onClick={() => { 
+                        routeChange(`/projects?openProject=${Project.split(' ').slice(0,1)}`)
+                      }}
+                    >
+                      <CardContent
+                        className={classes.cardContent}>
+                        {Project}
+                      </CardContent>
+                    </Card>
+                  </>
                 ))}
             </>
             : ''
