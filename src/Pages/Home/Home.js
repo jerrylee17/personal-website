@@ -31,7 +31,6 @@ export default function Home() {
                   window.open('https://www.linkedin.com/in/jerry-lee1999/', '_blank')
                 }}
                 style={{
-                  // float: 'left',
                   cursor: 'pointer'
                 }}
               />{' '}
@@ -41,7 +40,6 @@ export default function Home() {
                   window.open('https://github.com/jerrylee17', '_blank')
                 }}
                 style={{
-                  // float: 'right',
                   cursor: 'pointer'
                 }}
               />

@@ -5,7 +5,7 @@ export const ProjectsData = {
       "Name": "Drawing Numbers",
       "Repository": "https://github.com/hsorathia/drawing_numbers",
       "Link": "https://drawing-numbers.herokuapp.com/",
-      "Description": `A simple Neural Network to detect digits1 This
+      "Description": `A simple Neural Network to detect digits! This
         was my first attempt at a neural network1 Click on Demo to see
         how well I trained it!`,
       "Tools": [
