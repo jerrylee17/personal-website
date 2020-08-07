@@ -1,7 +1,7 @@
 .header-jumbo {
     padding: 2rem 2rem;
     background-size: 100%;
-    background-color: rgb(19, 17, 17) !important;
+    background-color: rgba(19, 17, 17, 0) !important;
 }
 
 .header-text {

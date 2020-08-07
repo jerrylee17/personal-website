@@ -9,7 +9,7 @@ import clsx from 'clsx'
 const useStyles = makeStyles((theme) => ({
   card: {
     minWidth: 275,
-    backgroundColor: '#36393f',
+    backgroundColor: 'rgba(54, 57, 63, 0.5)',
     color: 'white',
     margin: '2vh 2vw',
     cursor: 'pointer'
