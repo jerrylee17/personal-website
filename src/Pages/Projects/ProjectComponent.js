@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Card from '@material-ui/core/Card'
 import { makeStyles } from '@material-ui/core/styles';
-import { CardHeader, CardContent, Typography, CardActions, Button, Modal, Fade } from '@material-ui/core';
+import { CardHeader, CardContent, Typography, CardActions, Button, Modal, Fade, Hidden } from '@material-ui/core';
 import { Avatar } from '@material-ui/core';
 import './Projects.css'
 import clsx from 'clsx'
@@ -58,7 +58,7 @@ export default function ProjectComponent(props) {
   const [isSelected, setIsSelected] = useState(false)
   const previewDescription = Description.split('.').slice(0, 1).join(' ')
   useEffect(() => {
-    if (Name.startsWith(openProject)){
+    if (Name.startsWith(openProject)) {
       let target = document.getElementById(id)
       openProjectModal(target)
     }
@@ -100,7 +100,9 @@ export default function ProjectComponent(props) {
         />
         <CardContent>
           <Typography>
-            {previewDescription}
+            <Hidden xsDown>
+              {previewDescription}
+            </Hidden>
           </Typography>
         </CardContent>
         <CardActions>
