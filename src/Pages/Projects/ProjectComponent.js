@@ -86,7 +86,7 @@ export default function ProjectComponent(props) {
   return (
     <>
       <Card
-        className={clsx(classes.card, 'active')}
+        className={clsx(classes.card, 'active', 'project-card')}
         id={id}
         onClick={() => handlePreview(id)}
       >

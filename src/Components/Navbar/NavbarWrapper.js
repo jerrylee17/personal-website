@@ -7,7 +7,7 @@ export default function NavBarWrapper({
   ...props
 }) {
   return (
-    <div>
+    <>
       <NavBar />
       <Particles
         params={{
@@ -69,6 +69,6 @@ export default function NavBarWrapper({
           }}
       />
       <Component {...props} />
-    </div>
+    </>
   )
 }

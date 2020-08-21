@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     position: 'fixed',
     width: drawerWidth,
-    backgroundColor: '#36393f',
+    backgroundColor: 'rgba(24, 27, 35, 0.5)',
     color: 'white',
     top: '10vh',
     height: '80vh',
