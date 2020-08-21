@@ -3,6 +3,7 @@ import './Skills.css'
 import { makeStyles } from '@material-ui/core/styles'
 import { Card, CardContent } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
+import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -50,7 +51,7 @@ export default function SkillDisplay(props) {
                 (Project, index) => (
                   <>
                     <Card
-                      className={classes.card}
+                      className={clsx(classes.card, 'skill-project')}
                       key={index}
                       onClick={() => { 
                         routeChange(`/projects?openProject=${Project.split(' ').slice(0,1)}`)
