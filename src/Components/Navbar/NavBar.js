@@ -19,7 +19,7 @@ export default function NavBar(props) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <>
       <Navbar dark expand="md">
         <NavbarBrand href="/">Jerry Lee</NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -43,6 +43,6 @@ export default function NavBar(props) {
           </NavbarText>
         </Collapse>
       </Navbar>
-    </div>
+    </>
   );
 }

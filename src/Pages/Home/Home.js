@@ -5,11 +5,10 @@ import {
   Container
 } from 'reactstrap'
 import {
-  AboutMessage
+  AboutMessage,
+  PageIcons
 } from './HomeComponents'
 import './Home.css'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import GitHubIcon from '@material-ui/icons/GitHub'
 
 export default function Home() {
   return (
@@ -24,26 +23,7 @@ export default function Home() {
         </Row>
         <Row>
           <Col>
-            <div className='text-center'>
-              <LinkedInIcon
-                fontSize='large'
-                onClick={() => {
-                  window.open('https://www.linkedin.com/in/jerry-lee1999/', '_blank')
-                }}
-                style={{
-                  cursor: 'pointer'
-                }}
-              />{' '}
-              <GitHubIcon
-                fontSize='large'
-                onClick={() => {
-                  window.open('https://github.com/jerrylee17', '_blank')
-                }}
-                style={{
-                  cursor: 'pointer'
-                }}
-              />
-            </div>
+            <PageIcons />
           </Col>
         </Row>
       </Container>

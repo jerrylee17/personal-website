@@ -3,10 +3,12 @@ import './Skills.css'
 import { makeStyles } from '@material-ui/core/styles'
 import { Card, CardContent } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
+import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
   card: {
     backgroundColor: 'black',
+    boxShadow: '0 0 10px 1px rgba(255,255,255,0.8)',
     color: 'white',
     fontSize: '1rem',
     height: '100px',
@@ -36,8 +38,8 @@ export default function SkillDisplay(props) {
         <>
           <br />
           <h3 className='text-center'>{skill.Name}</h3>
-          Type: {skill.Type}
-          <br /> < br />
+          {/* Type: {skill.Type} */}
+          {/* <br /> < br /> */}
           {skill.Experience ?
             <>Experience: {skill.Experience}</>
             : ''
@@ -49,7 +51,7 @@ export default function SkillDisplay(props) {
                 (Project, index) => (
                   <>
                     <Card
-                      className={classes.card}
+                      className={clsx(classes.card, 'skill-project')}
                       key={index}
                       onClick={() => { 
                         routeChange(`/projects?openProject=${Project.split(' ').slice(0,1)}`)

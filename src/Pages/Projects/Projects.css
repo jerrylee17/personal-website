@@ -16,17 +16,17 @@
     bottom: 0;
 }
 
-.MuiCard-root {
+.project-card {
     height: 100%;
     position: relative;
 }
 
-.MuiCard-root.hidden {
+.project-card.hidden {
     opacity: 0;
     transition: 300ms ease-in-out;
 }
 
-.MuiCard-root.active {
+.project-card.active {
     opacity: 1;
     transition: 400ms ease-in-out;
     pointer-events: all;
@@ -39,4 +39,8 @@
     background-color: black !important;
 }
 
-
+.project-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px 2px white;
+    background: rgba(0,0,0,0);
+}

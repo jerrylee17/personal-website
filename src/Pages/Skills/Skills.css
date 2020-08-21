@@ -39,3 +39,10 @@
 .MuiCardContent-root:last-child {
     padding-bottom: 0px !important;
 }
+
+.skill-project:hover{
+    box-shadow: 0 0 10px 1px rgba(140, 255, 201, 0.8);
+    transform: scale(1.02);
+    transition-duration: 300ms, 500ms;
+    transition-property: transform, box-shadow;
+}
