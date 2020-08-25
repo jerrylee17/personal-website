@@ -115,14 +115,14 @@
         },
         {
             "Name": "Numpy",
-            "Type": "Tool",
+            "Type": "Library",
             "Projects": [
 
             ]
         },
         {
             "Name": "Pytest",
-            "Type": "Tool",
+            "Type": "Library",
             "Projects": [
 
             ]
@@ -136,28 +136,28 @@
         },
         {
             "Name": "Flask",
-            "Type": "Tool",
+            "Type": "Library",
             "Projects": [
                 "MasterKitchen"
             ]
         },
         {
             "Name": "Desmod/Simpy",
-            "Type": "Tool",
+            "Type": "Library",
             "Projects": [
 
             ]
         },
         {
             "Name": "Google API",
-            "Type": "Tool",
+            "Type": "API",
             "Projects": [
                 "Birb"
             ]
         },
         {
             "Name": "Discord API",
-            "Type": "Tool",
+            "Type": "API",
             "Projects": [
                 "Birb"
             ]

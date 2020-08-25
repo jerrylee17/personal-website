@@ -34,11 +34,22 @@ San Jose State University, planning to graduate in December of 2020.
 I am seeking a full time job for 2021.
 `
 
-export const SkillsMessage = `
-Click me to see Skills!
-`
-
-export const ProjectsMessage = `
-Click me to see Projects!
-`
+export const HomeMessages = [
+  {
+    'Text': 'My skills!',
+    'Redirect': '/skills'
+  },
+  {
+    'Text': 'My Projects!',
+    'Redirect': '/projects'
+  },
+  {
+    'Text': 'My experience! (Coming soon)',
+    'Path': '/'
+  },
+  {
+    'Text': 'My best project!',
+    'Redirect': 'https://sce.engr.sjsu.edu'
+  },
+]
 

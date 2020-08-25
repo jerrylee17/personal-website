@@ -21,7 +21,7 @@ export const ProjectsData = {
       "Project-id": 2,
       "Name": "Core-v4",
       "Repository": "https://github.com/SCE-Development/Core-v4",
-      "Link": "http://sce.engr.sjsu.edu/",
+      "Link": "https://sce.engr.sjsu.edu/",
       "Description": `This is the Society of Software and Computer 
         Engineering (SCE)'s outward face on the internet. Core-v4 serves
         as a place for SCE members to gather information about events 
@@ -40,7 +40,7 @@ export const ProjectsData = {
       "Project-id": 3,
       "Name": "Remote Paper Printing Infrastructure (SCE-RPC)",
       "Repository": "https://github.com/jerrylee17/printingRPC",
-      "Link": "http://sce.engr.sjsu.edu/",
+      "Link": "https://sce.engr.sjsu.edu/",
       "Description": `A page on Core-v4 that allows users to print.
         This started out as the printing page for the SCE, but became
         part of the new SCE-RPC repository where we connect the club 
