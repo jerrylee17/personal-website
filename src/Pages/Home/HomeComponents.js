@@ -1,6 +1,7 @@
 import React from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 
 export function PageIcons() {
   return (
@@ -18,6 +19,15 @@ export function PageIcons() {
         fontSize='large'
         onClick={() => {
           window.open('https://github.com/jerrylee17', '_blank')
+        }}
+        style={{
+          cursor: 'pointer'
+        }}
+      />{' '}
+      <PictureAsPdfIcon
+        fontSize='large'
+        onClick={() => {
+          window.open('./JerryLeeResume.pdf', '_blank')
         }}
         style={{
           cursor: 'pointer'
