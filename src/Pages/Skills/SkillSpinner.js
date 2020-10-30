@@ -72,7 +72,11 @@ export default function SkillSpinner(props) {
       animateobject(animation)
     })
     clickbox.addEventListener('click', () => {
-      setDisplayedSkill(skills.skills[i])
+      if (skills.skills[i].Projects.length > 0) {
+        setDisplayedSkill(skills.skills[i])
+      } else {
+        setDisplayedSkill(null)
+      }
     })
     const wrapperEl = document.querySelector('.wrapper');
     el.appendChild(clickbox);

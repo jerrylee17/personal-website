@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, makeStyles, Typography } from '@material
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    margin: 'auto',
     backgroundColor: 'rgba(54, 57, 63, 0.5)',
     color: 'white',
     margin: '2vh 2vw',
@@ -27,7 +26,6 @@ export default function ExperienceCard(props) {
   const {
     Company,
     Title,
-    Location,
     Dates,
     Bullets
   } = props;

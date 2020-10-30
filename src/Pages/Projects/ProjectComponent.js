@@ -1,10 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import Card from '@material-ui/core/Card'
 import { makeStyles } from '@material-ui/core/styles';
-import { CardHeader, CardContent, Typography, CardActions, Button, Modal, Fade, Hidden } from '@material-ui/core';
-import { Avatar } from '@material-ui/core';
+import {
+  Avatar,
+  CardHeader,
+  CardContent,
+  Typography,
+  CardActions,
+  Button,
+  Modal,
+  Fade,
+  Hidden,
+  Paper,
+  Collapse,
+  IconButton,
+  Grid
+} from '@material-ui/core';
 import './Projects.css'
 import clsx from 'clsx'
+import { blue, indigo } from '@material-ui/core/colors';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -26,25 +41,48 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   paper: {
-    backgroundColor: 'rgba(200,180,255)',
+    backgroundColor: indigo[100],
+    color: theme.palette.getContrastText(indigo[100]),
     border: '2px solid #000',
-    // filter: 'brightness(0.8)',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
-    width: '60vw'
+    width: '60vw',
+    maxHeight: '80vh',
+    overflow: 'scroll'
   },
-  buttonAlign: {
-    '& > *': {
-      margin: theme.spacing(1),
-    },
+  expand: {
+    textAlign: 'center',
+    transform: 'rotate(0deg)',
+    margin: 'auto',
+    '& svg': {
+      transition: theme.transitions.create('transform', {
+        duration: theme.transitions.duration.shortest,
+      }),
+    }
   },
-  button: {
-
+  expandOpen: {
+    '& svg': {
+      transform: 'rotate(180deg)',
+    }
+  },
+  skillsWrapper: {
+    display: 'flex',
+    marginLeft: 'auto'
+  },
+  gridItem: {
+    textAlign: 'center',
+  },
+  gridSkill: {
+    background: blue[100],
+    color: theme.palette.getContrastText(blue[100]),
+    margin: '2vh 3vw',
+    padding: '2vh 3vw',
   }
 }))
 
 export default function ProjectComponent(props) {
   const classes = useStyles();
+  const [expanded, setExpanded] = useState(false);
   const {
     Name,
     Repository,
@@ -64,6 +102,10 @@ export default function ProjectComponent(props) {
     }
   }, [Name, id, openProject])
 
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
   function closeProjectModal(target) {
     setIsSelected(false)
     target.classList.replace('hidden', 'active')
@@ -82,6 +124,7 @@ export default function ProjectComponent(props) {
       openProjectModal(target)
     }
   }
+
 
   return (
     <>
@@ -135,27 +178,41 @@ export default function ProjectComponent(props) {
           in={isSelected}
           timeout={300}
         >
-          <div className={classes.paper}>
+          <Paper className={classes.paper}>
             <h2 id="transition-modal-title" className='text-center'>{Name}</h2>
             <div id="transition-modal-description">
               {Description}
-              <br />
-              <br />
-              <div className={classes.buttonAlign}>
-                {
-                  Tools.map((tool, index) => (
-                    <Button
-                      className={clsx(classes.button, 'toolsButton')}
-                      variant='contained'
-                      key={index}
-                    >
-                      {tool}
-                    </Button>
-                  ))
-                }
-              </div>
             </div>
-          </div>
+            <br /><br /><br />
+            <div className={classes.skillsWrapper}>
+              <IconButton
+                className={clsx(classes.expand, {
+                  [classes.expandOpen]: expanded,
+                })}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="show more"
+              >
+                <ExpandMoreIcon />
+                Skills used
+                <ExpandMoreIcon />
+              </IconButton>
+            </div>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <Grid
+                container
+                justify='center'
+              >
+                {Tools.map((tool, index) => (
+                  <Grid item className={classes.gridItem} lg={4} sm={6} xs={12}>
+                    <Paper className={classes.gridSkill} elevation={3}>
+                      <h5>{tool}</h5>
+                    </Paper>
+                  </Grid>
+                ))}
+              </Grid>
+            </Collapse>
+          </Paper>
         </Fade>
       </Modal>
     </>

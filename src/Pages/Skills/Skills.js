@@ -41,7 +41,12 @@ export default function Skills() {
   let spinnerProps = {
     skills: skills,
     setDisplayedSkill: (skill) => {
-      if (skill === displayedSkill) {
+      if (skill === null) {
+        setOpen(false)
+        setTimeout(() => {
+          setDisplayedSkill({})
+        }, 200)
+      } else if (skill === displayedSkill) {
         setOpen(false)
         setTimeout(() => {
           setDisplayedSkill({})
@@ -59,7 +64,7 @@ export default function Skills() {
     <div className='page-background'>
       <div
         className={`${displayedSkill.Name ? 'left-component'
-        : 'centered-component'}`}
+          : 'centered-component'}`}
       >
         <SkillSpinner {...spinnerProps} />
       </div>
@@ -72,7 +77,7 @@ export default function Skills() {
           paper: classes.drawerPaper,
         }}
       >
-        <SkillDisplay {...displayProps}/>
+        <SkillDisplay {...displayProps} />
       </Drawer>
     </div>
   );
