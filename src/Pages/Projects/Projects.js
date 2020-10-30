@@ -10,7 +10,7 @@ export default function Projects(props) {
   }
   const query = queryString.parse(props.location.search)
   return (
-    <div className='page-background'>
+    <>
       <Header {...headerProps} />
       <section className='grid'>
         {
@@ -24,7 +24,7 @@ export default function Projects(props) {
           ))
         }
       </section>
-    </div>
+    </>
   );
 }
 

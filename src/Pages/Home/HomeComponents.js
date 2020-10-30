@@ -54,8 +54,8 @@ export const HomeMessages = [
     'Redirect': '/projects'
   },
   {
-    'Text': 'My experience! (Coming soon)',
-    'Path': '/'
+    'Text': 'My experience!',
+    'Redirect': '/experience'
   },
   {
     'Text': 'My best project!',

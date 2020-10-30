@@ -65,7 +65,7 @@ export default function NavBarWrapper({
           {
             position: 'fixed',
             opacity: '1',
-            zIndex: '0'
+            zIndex: '-3'
           }}
       />
       <Component {...props} />

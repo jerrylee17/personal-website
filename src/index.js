@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Routing from './Routing';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import Routing from './Routing';
 
 function App() {
   return (

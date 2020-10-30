@@ -38,12 +38,11 @@ export default function Home() {
     history.push(path)
   }
   return (
-    <div className='page-background' >
+    <>
       <Container>
         <Row>
           <Col>
             <h1 className='text-center'> Hi, I'm Jerry </h1>
-            {/* Animate a picture of myself */}
             {AboutMessage}
           </Col>
         </Row>
@@ -61,9 +60,9 @@ export default function Home() {
                     className={clsx(classes.card, 'home-cards')}
                     key={index}
                     onClick={() => {
-                      if (message.Redirect.startsWith('/')){
+                      if (message.Redirect.startsWith('/')) {
                         routeChange(message.Redirect)
-                      } else{
+                      } else {
                         window.open(message.Redirect, '_blank')
                       }
                     }}
@@ -78,6 +77,6 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </>
   );
 }

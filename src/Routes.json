@@ -1,25 +1,30 @@
 {
     "Routes": [
         {
-            "Name" : "Home",
-            "Route" : "/",
-            "Navbar" : "No"
+            "Name": "Home",
+            "Route": "/",
+            "Navbar": "No"
         },
         {
-            "Name" : "Skills",
+            "Name": "Experience",
+            "Route": "/experience",
+            "Navbar": "Yes"
+        },
+        {
+            "Name": "Skills",
             "Route": "/skills",
-            "Navbar" : "Yes"
+            "Navbar": "Yes"
         },
         {
-            "Name" : "Projects",
+            "Name": "Projects",
             "Route": "/projects",
-            "Navbar" : "Yes"
+            "Navbar": "Yes"
         },
         {
-            "Name" : "Contact me",
-            "Route" : "/contact",
+            "Name": "Contact me",
+            "Route": "/contact",
             "Navbar": "No",
-            "filePath" : "Contact"
+            "filePath": "Contact"
         }
     ]
 }
