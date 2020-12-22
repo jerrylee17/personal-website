@@ -33,22 +33,27 @@ const useStyles = makeStyles((theme) => ({
     color: 'yellow'
   },
   demoButton: {
-    color: 'pink'
+    color: 'pink',
+    '&:disabled': {
+      color: 'white !important',
+      opacity: 0.5,
+    }
   },
   modal: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    opacity: 0.93
   },
   paper: {
-    backgroundColor: indigo[100],
-    color: theme.palette.getContrastText(indigo[100]),
+    backgroundColor: indigo[50],
+    color: theme.palette.getContrastText(indigo[50]),
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
     width: '60vw',
     maxHeight: '80vh',
-    overflow: 'scroll'
+    overflow: 'scroll',
   },
   expand: {
     textAlign: 'center',
@@ -77,6 +82,12 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.getContrastText(blue[100]),
     margin: '2vh 3vw',
     padding: '2vh 3vw',
+  },
+  modalDemo: {
+    color: blue[800],
+  },
+  modalSource: {
+    color: blue[800],
   }
 }))
 
@@ -179,11 +190,29 @@ export default function ProjectComponent(props) {
           timeout={300}
         >
           <Paper className={classes.paper}>
-            <h2 id="transition-modal-title" className='text-center'>{Name}</h2>
+            <h2 id="transition-modal-title" className='text-center'>
+              {Name}
+            </h2>
             <div id="transition-modal-description">
               {Description}
             </div>
-            <br /><br /><br />
+            <br />
+            <Button
+              className={classes.modalDemo}
+              disabled={Link ? false : true}
+              href={Link}
+              target="_blank"
+            >
+              Demo
+            </Button>
+            <Button
+              className={classes.modalSource}
+              href={Repository}
+              target="_blank"
+            >
+              Source
+            </Button>
+            <br />
             <div className={classes.skillsWrapper}>
               <IconButton
                 className={clsx(classes.expand, {

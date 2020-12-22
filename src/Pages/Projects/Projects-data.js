@@ -25,8 +25,7 @@ export const ProjectsData = {
       "Description": `This is the Society of Software and Computer 
         Engineering (SCE)'s outward face on the internet. Core-v4 serves
         as a place for SCE members to gather information about events 
-        and provide feedback. The club has over 300 members. Note: This
-        website is currently down due to COVID.`,
+        and provide feedback. The club has over 300 members.`,
       "Tools": [
         "MongoDB",
         "ExpressJS",
@@ -44,8 +43,7 @@ export const ProjectsData = {
       "Description": `A page on Core-v4 that allows users to print.
         This started out as the printing page for the SCE, but became
         part of the new SCE-RPC repository where we connect the club 
-        website to numerous gadgets in the room. Note: This website
-        is currently down due to COVID.`,
+        website to numerous gadgets in the room.`,
       "Tools": [
         "MongoDB",
         "ExpressJS",

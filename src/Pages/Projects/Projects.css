@@ -1,8 +1,3 @@
-.MuiButtonBase-root:disabled {
-    color: white !important;
-    opacity: 0.5;
-}
-
 .grid {
     display: grid;
     /* color: black; */
